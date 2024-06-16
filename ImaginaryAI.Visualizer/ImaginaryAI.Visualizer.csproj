@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImaginaryAI\ImaginaryAI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Core">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Algorithms">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Audio">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Collision">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.Collision.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Graphing">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.Graphing.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.IO">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.UI">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Util">
+      <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

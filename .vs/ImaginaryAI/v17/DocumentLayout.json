@@ -1,0 +1,337 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\ImaginaryAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|c:\\dev\\imaginaryai\\imaginaryai.visualizer\\twodimensionalclassifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\twodimensionalclassifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\neuron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\neuron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\visualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\visualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\softmax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\softmax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\trainerrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\trainerrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\layer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\layer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\activation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\activation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\crossentropycost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\crossentropycost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\quadraticcost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\quadraticcost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB04B135-7AE8-4A9F-9326-9C61423C0287}|ImaginaryAITests\\ImaginaryAITests.csproj|C:\\dev\\ImaginaryAI\\imaginaryaitests\\modeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB04B135-7AE8-4A9F-9326-9C61423C0287}|ImaginaryAITests\\ImaginaryAITests.csproj|solutionrelative:imaginaryaitests\\modeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB04B135-7AE8-4A9F-9326-9C61423C0287}|ImaginaryAITests\\ImaginaryAITests.csproj|C:\\dev\\ImaginaryAI\\imaginaryaitests\\crossentropycosttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB04B135-7AE8-4A9F-9326-9C61423C0287}|ImaginaryAITests\\ImaginaryAITests.csproj|solutionrelative:imaginaryaitests\\crossentropycosttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB04B135-7AE8-4A9F-9326-9C61423C0287}|ImaginaryAITests\\ImaginaryAITests.csproj|C:\\dev\\ImaginaryAI\\imaginaryaitests\\softmaxtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB04B135-7AE8-4A9F-9326-9C61423C0287}|ImaginaryAITests\\ImaginaryAITests.csproj|solutionrelative:imaginaryaitests\\softmaxtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\imaginaryexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\imaginaryexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1552657185:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Neuron.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Neuron.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Neuron.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Neuron.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Neuron.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAYwD0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:42:44.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Activation.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Activation.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Activation.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Activation.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Activation.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA1wD4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:04:20.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Softmax.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Softmax.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Softmax.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Softmax.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Softmax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:42:32.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pass.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Pass.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Pass.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Pass.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Pass.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T21:52:30.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Layer.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Layer.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Layer.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Layer.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Layer.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAQwEoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:01:16.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Connection.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Connection.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Connection.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Connection.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAjwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:48:39.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TwoDimensionalClassifier.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\TwoDimensionalClassifier.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\TwoDimensionalClassifier.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\TwoDimensionalClassifier.cs",
+              "RelativeToolTip": "ImaginaryAI.Visualizer\\TwoDimensionalClassifier.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T21:39:06.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Visualizer.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\Visualizer.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\Visualizer.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\Visualizer.cs",
+              "RelativeToolTip": "ImaginaryAI.Visualizer\\Visualizer.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAIAwwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T21:31:42.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\Program.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\Program.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\Program.cs",
+              "RelativeToolTip": "ImaginaryAI\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:41:36.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Model.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Model.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Model.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Model.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAhwBABAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T09:18:28.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrainerRunner.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\TrainerRunner.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\TrainerRunner.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\TrainerRunner.cs",
+              "RelativeToolTip": "ImaginaryAI.Visualizer\\TrainerRunner.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwBgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T03:27:36.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Trainer.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Trainer.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Trainer.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Trainer.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAD4v20AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T09:01:26.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CrossEntropyCost.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T05:12:24.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\Extensions.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\Extensions.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\Extensions.cs",
+              "RelativeToolTip": "ImaginaryAI\\Extensions.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwEcAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T04:06:21.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuadraticCost.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T05:14:16.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ModelTest.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAITests\\ModelTest.cs",
+              "RelativeDocumentMoniker": "ImaginaryAITests\\ModelTest.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAITests\\ModelTest.cs",
+              "RelativeToolTip": "ImaginaryAITests\\ModelTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T01:35:45.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ImaginaryException.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T21:55:18.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SoftmaxTests.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAITests\\SoftmaxTests.cs",
+              "RelativeDocumentMoniker": "ImaginaryAITests\\SoftmaxTests.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAITests\\SoftmaxTests.cs",
+              "RelativeToolTip": "ImaginaryAITests\\SoftmaxTests.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwA4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:52:39.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CrossEntropyCostTest.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAITests\\CrossEntropyCostTest.cs",
+              "RelativeDocumentMoniker": "ImaginaryAITests\\CrossEntropyCostTest.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAITests\\CrossEntropyCostTest.cs",
+              "RelativeToolTip": "ImaginaryAITests\\CrossEntropyCostTest.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAmwCgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T22:03:44.213Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
