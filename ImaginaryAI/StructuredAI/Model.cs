@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ImaginaryAI.StructuredAI
@@ -27,21 +29,26 @@ namespace ImaginaryAI.StructuredAI
         /// <param name="cost">The cost function of this model. If this is null, 
         /// <see cref="CrossEntropyCost"/> will be used.</param>
         /// <param name="epsilon">The learning rate. Larger is faster learning but less accurate.</param>
-        /// <param name="softmax">Set this to true to use softmax before cost is applied.
-        /// Note that this should only be used for catagorical models.</param>
-        public Model(string modelName, int[] neuronsPerLayer, Cost? cost = null, double epsilon = 0.01,
-            double momentum = 0.9)
+        /// <param name="hiddenLayerActivation">The activation used for hidden layers. Sigmoid by default</param>
+        /// <param name="outputLayerActivation">The activation used for output layers. Softmax by default.</param>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+        public Model(string modelName, int[] neuronsPerLayer, Cost? cost = null,
+            Activation? hiddenLayerActivation = null, Activation? outputLayerActivation = null,
+            double epsilon = 0.01, double momentum = 0.9)
         {
             this.modelName = modelName;
             this.Epsilon = epsilon;
             this.Momentum = momentum;
             this.cost = cost ?? new CrossEntropyCost();
             layers = new Layer[neuronsPerLayer.Length];
+            hiddenLayerActivation ??= Activation.Sigmoid;
+            outputLayerActivation ??= Activation.Softmax;
             for (int i = 0; i < neuronsPerLayer.Length; i++)
             {
                 if (i > 0)
                 {
-                    layers[i] = new Layer(neuronsPerLayer[i], Activation.Sigmoid);
+                    layers[i] = new Layer(neuronsPerLayer[i],
+                        i < neuronsPerLayer.Length - 1 ? hiddenLayerActivation! : outputLayerActivation!);
                     layers[i].Prev = layers[i - 1];
                 }
                 else
@@ -52,7 +59,9 @@ namespace ImaginaryAI.StructuredAI
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public Model(string modelName, double[][] neuronBiases, double[][] connectionWeights,
+            Activation? hiddenLayerActivation = null, Activation? outputLayerActivation = null,
             Cost? cost = null, double epsilon = 0.01,
             double momentum = 0.9)
         {
@@ -60,7 +69,8 @@ namespace ImaginaryAI.StructuredAI
             this.Epsilon = epsilon;
             this.Momentum = momentum;
             this.cost = cost ?? new CrossEntropyCost();
-
+            hiddenLayerActivation ??= Activation.Sigmoid;
+            outputLayerActivation ??= Activation.Softmax;
             layers = new Layer[neuronBiases.Length + 1];
             Debug.Assert(neuronBiases.Length == connectionWeights.Length);
             for (int i = 0; i < neuronBiases.Length + 1; i++)
@@ -68,7 +78,8 @@ namespace ImaginaryAI.StructuredAI
                 if (i == 0) // input layer
                     layers[i] = new Layer(connectionWeights[0].Length / neuronBiases[0].Length, Activation.Error);
                 else // hidden or output layer
-                    layers[i] = new Layer(neuronBiases[i - 1].Length, Activation.Sigmoid);
+                    layers[i] = new Layer(neuronBiases[i - 1].Length,
+                        i < layers.Length - 1 ? hiddenLayerActivation! : outputLayerActivation!);
 
                 if (i > 0)
                     layers[i].Prev = layers[i - 1];
@@ -110,6 +121,7 @@ namespace ImaginaryAI.StructuredAI
         /// Note that the input layer neurons are excluded because their biases are unused.
         /// </summary>
         /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public double[][] ExportBiases()
         {
             double[][] res = new double[layers.Length - 1][];
@@ -132,6 +144,7 @@ namespace ImaginaryAI.StructuredAI
         /// ordered by (prev_0-cur_0, prev_1-cur_0, prev_2-cur_0, ..., prev_n-cur_0, prev_0-cur_1, prev_1-cur_1, ...).
         /// </summary>
         /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public double[][] ExportWeights()
         {
             double[][] res = new double[layers.Length - 1][];
@@ -155,8 +168,29 @@ namespace ImaginaryAI.StructuredAI
         }
 
         /// <summary>
+        /// Exports the network to bias.txt and weights.txt in the given folder.
+        /// </summary>
+        /// <param name="folderPath"></param>
+        public void ExportToDisk(string folderPath)
+        {
+            string biases = JsonSerializer.Serialize(ExportBiases());
+            string weights = JsonSerializer.Serialize(ExportWeights());
+
+            string rootPath = Path.Combine(folderPath, modelName);
+            string biasesPath = Path.Combine(rootPath, "biases.txt");
+            string weightsPath = Path.Combine(rootPath, "weights.txt");
+
+            if (!Directory.Exists(rootPath))
+                Directory.CreateDirectory(rootPath);
+
+            File.WriteAllText(biasesPath, biases);
+            File.WriteAllText(weightsPath, weights);
+        }
+
+        /// <summary>
         /// Completely randomizes (i.e., resets) the entire model.
         /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void RandomizeModel(int seed, string? method = "Random")
         {
             Random random = new Random(seed);
@@ -194,6 +228,7 @@ namespace ImaginaryAI.StructuredAI
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         private void RandomizeLayer(Random random, double upper, double lower, int layerInd)
         {
             if (layerInd == 0) throw new ImaginaryException("You may not randomize the input layer!");
@@ -226,6 +261,7 @@ namespace ImaginaryAI.StructuredAI
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void ForwardPass(Pass pass)
         {
             for (int i = 0; i < InputLayer.NeuronCount; i++)
@@ -241,6 +277,7 @@ namespace ImaginaryAI.StructuredAI
         /// Backwards and propagates (learning is done here).
         /// </summary>
         /// <param name="pass"></param>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void BackwardPass(Pass pass)
         {
             double[] predictedOutput = Results;
@@ -259,6 +296,7 @@ namespace ImaginaryAI.StructuredAI
         /// </summary>
         /// <param name="batch"></param>
         /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public int LearnBatch(Pass[] batch)
         {
             int batchSize = 0;
@@ -292,11 +330,27 @@ namespace ImaginaryAI.StructuredAI
             return correct;
         }
 
-        public double[] OutputNeuronValues => (from one in OutputLayer.neurons select one.neuronValueCache).ToArray();
-        public double[] Results => (from one in OutputLayer.neurons select one.activationValueCache).ToArray();
+        public double[] OutputNeuronValues
+        {
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+            get
+            {
+                return (from one in OutputLayer.neurons select one.neuronValueCache).ToArray();
+            }
+        }
+
+        public double[] Results
+        {
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+            get
+            {
+                return (from one in OutputLayer.neurons select one.activationValueCache).ToArray();
+            }
+        }
 
         public int Prediction
         {
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
             get
             {
                 double[] results = Results;
@@ -314,6 +368,7 @@ namespace ImaginaryAI.StructuredAI
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public double GetResultCost(Pass pass) => cost.GetCost(pass, Results);
     }
 }

@@ -70,7 +70,8 @@ namespace ImaginaryAI.Visualizer
                 SFXManager.Init();// init sound effects
                 MusicManager.Init();// init music manager
 
-                SceneManager.QueueLoadScene(new TwoDimensionalClassifier());
+                //SceneManager.QueueLoadScene(new TwoDimensionalClassifier());
+                SceneManager.QueueLoadScene(new MNIST());
 
                 Input.Init(this);
 

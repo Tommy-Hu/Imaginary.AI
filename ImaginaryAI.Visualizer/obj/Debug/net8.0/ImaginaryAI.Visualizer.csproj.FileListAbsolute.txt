@@ -45,3 +45,9 @@ C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Debug\net8.0\ImaginaryAI.Visualize
 C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Debug\net8.0\ImaginaryAI.Visualizer.genruntimeconfig.cache
 C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Debug\net8.0\ref\ImaginaryAI.Visualizer.dll
 C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\bin\Debug\net8.0\Content\Fonts\Arial.xnb
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Debug\net8.0\ImaginaryAI.Visualizer.sourcelink.json
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll

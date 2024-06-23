@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MpxLDyQnHt0sC0QCtjOaCRLeqJPSDulA3PQrlN/JCLOSQDtsOcjiJbRIOQ47dRNTze021DoKkPSaTXirI5ySNg==",
+  "dgSpecHash": "6iHnMY8yXdD+JrArZoRN4clMn2+sbgTMNY+Xg/MrQk435Iw09Y5o1g1vze9NGkIYuKQsqVN1XJ99mjd2W3z8Ig==",
   "success": true,
   "projectFilePath": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\ImaginaryAI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tommy\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\tommy\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

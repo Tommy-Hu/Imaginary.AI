@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,22 +19,30 @@ namespace ImaginaryAI.StructuredAI
         public int CurrentEpoch { get; private set; }
         public int CurrentBatch { get; private set; }
         public int CorrectsInCurrentEpoch { get; private set; }
+        /// <summary>
+        /// This function should modify (or keep) the double array such that it still represents the 
+        /// same class as before modification. This allows variations in the training data and
+        /// allow edge cases to be learned.
+        /// </summary>
+        public Action<double[]>? DataPreTrainingTransformer { get; private set; }
 
         /// <summary>
         /// Trains with the given csv.
         /// </summary>
         /// <param name="csvPath"></param>
-        public Trainer(Model model, Pass[] formatedData, int epochs = 200, int batchSize = 10)
+        public Trainer(Model model, Pass[] formatedData, int epochs = 200, int batchSize = 10,
+            Action<double[]>? dataPreTrainingTransformer = null)
         {
             Model = model;
             FormatedData = formatedData;
             Epochs = epochs;
             BatchSize = batchSize;
-
+            DataPreTrainingTransformer = dataPreTrainingTransformer;
             //model.Dump(includeWeight: false);
         }
 
-        public void Train(Action? onBatchFinished = null, Action? onEpochFinished = null)
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+        public void Train(Action<int>? onBatchFinished = null, Action? onEpochFinished = null)
         {
             int rows = FormatedData.Length;
             int inputCount = Model.InputLayer.NeuronCount;
@@ -54,12 +63,13 @@ namespace ImaginaryAI.StructuredAI
                         Debug.Assert(FormatedData[sampleInd].inputs.Length == inputCount);
 
                         actualBatchSize++;
-                        batch[b] = FormatedData[sampleInd];
+                        batch[b] = FormatedData[sampleInd].Clone();
+                        DataPreTrainingTransformer?.Invoke(batch[b].inputs);
                     }
                     if (actualBatchSize > 0)
                     {
-                        Model.LearnBatch(batch);
-                        onBatchFinished?.Invoke();
+                        int correct = Model.LearnBatch(batch);
+                        onBatchFinished?.Invoke(correct);
                     }
                     batchStart += BatchSize;
                 }
@@ -69,9 +79,37 @@ namespace ImaginaryAI.StructuredAI
         }
 
         /// <summary>
+        /// Tests the model and returns the accuracy.
+        /// </summary>
+        /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+        public double Test(Pass[] tests, out double averageCost)
+        {
+            int rows = tests.Length;
+            int inputCount = Model.InputLayer.NeuronCount;
+
+            int correctCount = 0;
+            double totalCost = 0;
+            for (int i = 0; i < rows; i++)
+            {
+                Pass pass = tests[i].Clone();
+                DataPreTrainingTransformer?.Invoke(pass.inputs);
+                Model.ForwardPass(pass);
+                int predictedClass = Model.Prediction;
+                if (predictedClass == pass.ExpectedClass)
+                    correctCount++;
+                totalCost += Model.GetResultCost(pass);
+            }
+            correctCount.Dump();
+            averageCost = totalCost / (double)rows;
+            return (double)correctCount / (double)rows;
+        }
+
+        /// <summary>
         /// This train function yields after every batch finishes.
         /// </summary>
         /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public IEnumerator Train()
         {
             int rows = FormatedData.Length;
@@ -97,7 +135,8 @@ namespace ImaginaryAI.StructuredAI
                         Debug.Assert(FormatedData[sampleInd].inputs.Length == inputCount);
 #endif
                         actualBatchSize++;
-                        batch[b] = FormatedData[sampleInd];
+                        batch[b] = FormatedData[sampleInd].Clone();
+                        DataPreTrainingTransformer?.Invoke(batch[b].inputs);
                     }
                     if (actualBatchSize > 0)
                     {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,7 @@ namespace ImaginaryAI.StructuredAI
         public double[] inputs;
         public double[] expectedOutput;
 
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public Pass(double[] inputs, double[] expectedOutput)
         {
             this.inputs = inputs;
@@ -22,6 +24,7 @@ namespace ImaginaryAI.StructuredAI
 
         public int ExpectedClass
         {
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
             get
             {
                 double maxSoFar = double.NegativeInfinity;
@@ -36,6 +39,12 @@ namespace ImaginaryAI.StructuredAI
                 }
                 return maxInd;
             }
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+        public Pass Clone()
+        {
+            return new Pass((double[])inputs.Clone(), (double[])expectedOutput.Clone());
         }
     }
 }

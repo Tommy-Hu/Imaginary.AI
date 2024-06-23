@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Core.Util">
       <HintPath>..\..\Imaginary Survival\Core.Graphing\bin\Release\net6.0\Core.Util.dll</HintPath>
     </Reference>

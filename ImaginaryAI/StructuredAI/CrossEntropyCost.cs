@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,6 +10,8 @@ namespace ImaginaryAI.StructuredAI
 {
     public class CrossEntropyCost : Cost
     {
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public override double GetCost(Pass pass, double[] predictedOutput)
         {
             int n = predictedOutput.Length;
@@ -23,6 +26,8 @@ namespace ImaginaryAI.StructuredAI
             return -res;
         }
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public override double GetCostDerivative(Pass pass, double[] predictedOutput, int index)
         {
             int n = predictedOutput.Length;

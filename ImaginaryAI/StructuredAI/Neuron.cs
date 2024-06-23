@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,16 +24,10 @@ namespace ImaginaryAI.StructuredAI
         public double activationValueCache;
         public double neuronValueCache;
 
-        public Activation activation;
-
-        public Neuron(Activation activation)
-        {
-            this.activation = activation;
-        }
-
         /// <summary>
         /// Clears all data in this neuron.
         /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void Wipe()
         {
             bias = 0;
@@ -48,6 +43,7 @@ namespace ImaginaryAI.StructuredAI
         /// <param name="weights"></param>
         /// <param name="inputs"></param>
         /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void RecalculateNeuronValue()
         {
             // note that the input layer neurons are skipped from the Step function below
@@ -63,22 +59,13 @@ namespace ImaginaryAI.StructuredAI
             }
         }
 
-        /// <summary>
-        /// Recalculates the neuron activation value using the stored <see cref="neuronValueCache"/>.
-        /// </summary>
-        public void RecalculateNeuronActivation()
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+        public void SetActivationValue(double newValue)
         {
-            // note that the input layer neurons are skipped from the Step function below
-            activationValueCache = activation.activationFunc(neuronValueCache);
+            activationValueCache = newValue;
         }
 
-        public void Step()
-        {
-            if (layer.IsInputLayer) return;
-            RecalculateNeuronValue();
-            RecalculateNeuronActivation();
-        }
-
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void ApplyAdjustment(int batchSize, double momentum)
         {
             double changeThisPass = biasAdjustment / (double)batchSize + momentum * biasMomentum;

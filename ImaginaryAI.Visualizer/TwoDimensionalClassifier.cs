@@ -34,8 +34,9 @@ namespace ImaginaryAI.Visualizer
         public override void AfterLoaded()
         {
             MainUI = CreateUILayer("Main");
-            model = new Model("2D Classifier", [2, 4, 3], cost: new QuadraticCost(), epsilon: .03,
-                momentum: 0.0);
+            model = new Model("2D Classifier", [2, 4, 3], cost: new CrossEntropyCost(), epsilon: .03,
+                momentum: 0.0, hiddenLayerActivation: Activation.Sigmoid,
+                outputLayerActivation: Activation.Softmax);
             int seed = 0;
             model.RandomizeModel(seed);
             Random random = new Random(seed);

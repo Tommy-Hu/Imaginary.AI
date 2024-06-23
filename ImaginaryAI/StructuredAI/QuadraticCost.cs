@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,8 @@ namespace ImaginaryAI.StructuredAI
 {
     public class QuadraticCost : Cost
     {
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public override double GetCost(Pass pass, double[] predicted)
         {
             int n = predicted.Length;
@@ -21,6 +24,8 @@ namespace ImaginaryAI.StructuredAI
             return acc;
         }
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public override double GetCostDerivative(Pass pass, double[] predicted, int index)
         {
             // 2 * (p - y)

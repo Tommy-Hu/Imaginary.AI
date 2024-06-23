@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "o4+4kNqf4A5hZqfPxd5yLldII28a0pGv0TylK6h12vq84S70MU8oXmlp336FT4dJDi3w1tJpe1PXp6HsMyJ5VQ==",
+  "dgSpecHash": "VttckXBjKW9KeMimKKiM1z+jEseij4iCVeEWOe0xDhouDXwRZcQDw9yWIAury9tPXOmdePO1JjcpikCRVgG0jg==",
   "success": true,
   "projectFilePath": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tommy\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\tommy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\tommy\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\tommy\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\tommy\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

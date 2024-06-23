@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,12 +22,16 @@ namespace ImaginaryAI.StructuredAI
         public double weightAdjustment;
         private double weightMomentum;
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public Connection(Neuron from, Neuron to)
         {
             this.from = from;
             this.to = to;
         }
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void Wipe()
         {
             weight = 0;
@@ -39,11 +44,15 @@ namespace ImaginaryAI.StructuredAI
         /// using the bias from <see cref="to"/>.
         /// </summary>
         /// <returns></returns>
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public double CalculateConnectionValue()
         {
             return weight * from.activationValueCache;
         }
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void ApplyAdjustment(int batchSize, double momentum)
         {
             double changeThisPass = weightAdjustment / (double)batchSize + momentum * weightMomentum;

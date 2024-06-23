@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +14,16 @@ namespace ImaginaryAI.StructuredAI
         public Neuron[] neurons;
 
         public int NeuronCount => neurons.Length;
+        public double[] NeuronValues
+        {
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+            get
+            {
+                return (from n in neurons select n.neuronValueCache).ToArray();
+            }
+        }
+
+        public Activation Activation { get; private set; }
 
         private Layer? prev;
         private Layer? next;
@@ -20,6 +31,7 @@ namespace ImaginaryAI.StructuredAI
         public Layer? Prev
         {
             get => prev;
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
             set
             {
                 if (value != null)
@@ -34,6 +46,7 @@ namespace ImaginaryAI.StructuredAI
         public Layer? Next
         {
             get => next;
+            [MethodImpl(MethodImplOptions.AggressiveOptimization)]
             set
             {
                 next = value;
@@ -59,25 +72,36 @@ namespace ImaginaryAI.StructuredAI
         public bool IsInputLayer => prev == null;
         public bool IsOutputLayer => next == null;
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public Layer(int neuronCount, Activation activation)
         {
+            this.Activation = activation;
             neurons = new Neuron[neuronCount];
             for (int i = 0; i < neuronCount; i++)
             {
-                neurons[i] = new Neuron(activation) { layer = this, };
+                neurons[i] = new Neuron() { layer = this, };
             }
         }
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void ForwardStep()
         {
-            foreach (var n in neurons)
+            if (!IsInputLayer)
             {
-                n.Step();
+                foreach (var n in neurons)
+                    n.RecalculateNeuronValue();
+                double[] neuronActivationValues = Activation.activationFunc(NeuronValues);
+                for (int i = 0; i < NeuronCount; i++)
+                    neurons[i].SetActivationValue(neuronActivationValues[i]);
             }
             if (!IsOutputLayer)
                 next!.ForwardStep();
         }
 
+
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         public void BackwardStep(double[] partials)
         {
             Debug.Assert(partials.Length == NeuronCount);
@@ -87,13 +111,9 @@ namespace ImaginaryAI.StructuredAI
             // Note that partials are calculated until (and excluding) the neuron activation function derivative.
             // Now, each of these values must be multiplied by its corresponding da/dz z_curLayer.
 
-            for (int i = 0; i < NeuronCount; i++)
-            {
-                // satisfy the vec(da/dz (z_curLayer)) invariant, where z_curLayer are
-                // z values of this layer.
-                Neuron n = neurons[i];
-                partials[i] *= n.activation.activationDerivative(n.neuronValueCache);
-            }
+            // satisfy the vec(da/dz (z_curLayer)) invariant, where z_curLayer are
+            // z values of this layer.
+            partials = Activation.activationDerivative(NeuronValues, partials);
 
             // Now, partials contains all partial derivative up to (and including) a'(z_i).
 

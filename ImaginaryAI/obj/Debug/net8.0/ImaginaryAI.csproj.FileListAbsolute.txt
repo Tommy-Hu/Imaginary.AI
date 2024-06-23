@@ -16,3 +16,9 @@ C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\Core.Util.dll
 C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\Core.Util.pdb
 C:\dev\ImaginaryAI\ImaginaryAI\obj\Debug\net8.0\ImaginaryAI.csproj.AssemblyReference.cache
 C:\dev\ImaginaryAI\ImaginaryAI\obj\Debug\net8.0\Imaginar.67F1AC84.Up2Date
+C:\dev\ImaginaryAI\ImaginaryAI\obj\Debug\net8.0\ImaginaryAI.sourcelink.json
+C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\dev\ImaginaryAI\ImaginaryAI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
