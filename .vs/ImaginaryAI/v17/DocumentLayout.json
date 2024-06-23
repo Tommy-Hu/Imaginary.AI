@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\dev\\ImaginaryAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\mnist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|c:\\dev\\imaginaryai\\imaginaryai.visualizer\\mnist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\mnist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\modelrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\modelrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|c:\\dev\\imaginaryai\\imaginaryai.visualizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\visualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\visualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|c:\\dev\\imaginaryai\\imaginaryai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,7 +39,7 @@
       "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\imaginaryexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|c:\\dev\\imaginaryai\\imaginaryai\\structuredai\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|C:\\dev\\ImaginaryAI\\imaginaryai\\structuredai\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5594551-C5BA-4E3B-843F-B0A300DCB792}|ImaginaryAI\\ImaginaryAI.csproj|solutionrelative:imaginaryai\\structuredai\\cost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\painter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\modelrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\modelrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|C:\\dev\\ImaginaryAI\\imaginaryai.visualizer\\trainerrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67F85DC3-479E-4176-921A-929C90DE889A}|ImaginaryAI.Visualizer\\ImaginaryAI.Visualizer.csproj|solutionrelative:imaginaryai.visualizer\\trainerrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -98,20 +102,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Pass.cs",
-              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Pass.cs",
-              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Pass.cs",
-              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Pass.cs",
-              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Pass.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\Program.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\Program.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\Program.cs",
+              "RelativeToolTip": "ImaginaryAI.Visualizer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T21:52:30.318Z",
+              "WhenOpened": "2024-06-23T02:29:36.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Connection.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Connection.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Connection.cs",
@@ -119,12 +123,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Connection.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAcwDIAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T01:48:39.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T01:48:39.98Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Layer.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Layer.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Layer.cs",
@@ -132,12 +135,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Layer.cs",
               "ViewState": "AQIAAI4AAAAAAAAAAAAIwGgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T06:01:16.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T06:01:16.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\Program.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\Program.cs",
@@ -145,25 +147,24 @@
               "RelativeToolTip": "ImaginaryAI\\Program.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwBYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T08:41:36.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T08:41:36.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ImageProcessor.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\ImageProcessor.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\ImageProcessor.cs",
               "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\ImageProcessor.cs",
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\ImageProcessor.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCMAAABNAAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAgwHsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T21:39:38.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CrossEntropyCost.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
@@ -171,12 +172,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\CrossEntropyCost.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAcwA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T05:12:24.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T05:12:24.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "QuadraticCost.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
@@ -184,12 +184,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\QuadraticCost.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAgwB8AAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T05:14:16.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T05:14:16.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ImaginaryException.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
@@ -197,8 +196,7 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\ImaginaryException.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T21:55:18.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T21:55:18.923Z"
             },
             {
               "$type": "Document",
@@ -208,14 +206,14 @@
               "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\MNIST.cs",
               "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\MNIST.cs",
               "RelativeToolTip": "ImaginaryAI.Visualizer\\MNIST.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAowCMAAAAwAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAcwGIAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T04:37:03.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Model.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Model.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Model.cs",
@@ -223,12 +221,36 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Model.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAAwCEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:18:28.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T09:18:28.922Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ModelRunner.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\ModelRunner.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\ModelRunner.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\ModelRunner.cs",
+              "RelativeToolTip": "ImaginaryAI.Visualizer\\ModelRunner.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T05:52:14.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pass.cs",
+              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Pass.cs",
+              "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Pass.cs",
+              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Pass.cs",
+              "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Pass.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T21:52:30.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Visualizer.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\Visualizer.cs",
               "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\Visualizer.cs",
@@ -236,12 +258,11 @@
               "RelativeToolTip": "ImaginaryAI.Visualizer\\Visualizer.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAcwD8AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:31:42.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T21:31:42.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Neuron.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Neuron.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Neuron.cs",
@@ -249,12 +270,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Neuron.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAgwB0AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T08:42:44.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T08:42:44.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Trainer.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Trainer.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Trainer.cs",
@@ -262,12 +282,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Trainer.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAwwGQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T09:01:26.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T09:01:26.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Cost.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI\\StructuredAI\\Cost.cs",
               "RelativeDocumentMoniker": "ImaginaryAI\\StructuredAI\\Cost.cs",
@@ -275,12 +294,11 @@
               "RelativeToolTip": "ImaginaryAI\\StructuredAI\\Cost.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T06:32:20.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T06:32:20.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "TwoDimensionalClassifier.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\TwoDimensionalClassifier.cs",
               "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\TwoDimensionalClassifier.cs",
@@ -292,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Painter.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\Painter.cs",
               "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\Painter.cs",
@@ -300,24 +318,11 @@
               "RelativeToolTip": "ImaginaryAI.Visualizer\\Painter.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAowDAAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T05:21:08.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T05:21:08.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ModelRunner.cs",
-              "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\ModelRunner.cs",
-              "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\ModelRunner.cs",
-              "ToolTip": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\ModelRunner.cs",
-              "RelativeToolTip": "ImaginaryAI.Visualizer\\ModelRunner.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADgvxUAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T05:52:14.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "TrainerRunner.cs",
               "DocumentMoniker": "C:\\dev\\ImaginaryAI\\ImaginaryAI.Visualizer\\TrainerRunner.cs",
               "RelativeDocumentMoniker": "ImaginaryAI.Visualizer\\TrainerRunner.cs",

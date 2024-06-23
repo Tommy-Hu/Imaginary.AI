@@ -92,13 +92,13 @@ namespace ImaginaryAI.Visualizer
             {
                 Color[] data = painting.GetScaledPaintingData(28, 28);
                 double[] buffer = (from d in data select (double)d.R / 255.0).ToArray();
-                if (OperatingSystem.IsWindows())
-                {
-                    var btm = ImageProcessor.BufferToBitmap(buffer, 28, 28);
-                    btm.Save("C:/Users/tommy/Desktop/AI/Tests Model/Painter.png",
-                        System.Drawing.Imaging.ImageFormat.Png);
-                    btm.Dispose();
-                }
+                //if (OperatingSystem.IsWindows())
+                //{
+                //    var btm = ImageProcessor.BufferToBitmap(buffer, 28, 28);
+                //    btm.Save("C:/Users/tommy/Desktop/AI/Tests Model/Painter.png",
+                //        System.Drawing.Imaging.ImageFormat.Png);
+                //    btm.Dispose();
+                //}
                 return new Pass(buffer, new double[10]);
             },
             () =>

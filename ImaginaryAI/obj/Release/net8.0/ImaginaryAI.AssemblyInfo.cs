@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImaginaryAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f42c4869607d164511b2a4ff4e63702afd87f6c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+878d259ff30f6546961b406e2fb46aefaf8cd3e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImaginaryAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImaginaryAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

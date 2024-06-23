@@ -1,0 +1,6 @@
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Release\net8.0\win-x64\ImaginaryAI.Visualizer.csproj.AssemblyReference.cache
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Release\net8.0\win-x64\ImaginaryAI.Visualizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Release\net8.0\win-x64\ImaginaryAI.Visualizer.AssemblyInfoInputs.cache
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Release\net8.0\win-x64\ImaginaryAI.Visualizer.AssemblyInfo.cs
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Release\net8.0\win-x64\ImaginaryAI.Visualizer.csproj.CoreCompileInputs.cache
+C:\dev\ImaginaryAI\ImaginaryAI.Visualizer\obj\Release\net8.0\win-x64\ImaginaryAI.Visualizer.sourcelink.json
